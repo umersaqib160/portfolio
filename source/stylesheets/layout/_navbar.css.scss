@@ -1,6 +1,15 @@
-.navbar-default {
+.navbar{
     background-color: transparent;
     border: 0;
     color:#0E4984;
-    position: absolute;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
   }
+.navbar-brand {
+  text-align:center;
+}
+
+.navbar-scroll {
+  background: rgba(1, 1, 13,0.8);
+   }
