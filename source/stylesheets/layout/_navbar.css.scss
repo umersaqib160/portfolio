@@ -5,7 +5,13 @@
     position: fixed;
     width: 100%;
     z-index: 9999;
+    padding-bottom: 13px;
+
+.container{
+  padding-right: 0px;
+  margin-right: 10px;
   }
+}
 .navbar-brand {
   text-align:center;
 }
@@ -13,3 +19,7 @@
 .navbar-scroll {
   background: rgba(1, 1, 13,0.8);
    }
+
+.nav .navbar-nav {
+  margin-bottom: 20px;
+}

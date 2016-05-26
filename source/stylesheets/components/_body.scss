@@ -1,5 +1,6 @@
 body.index {
   background-size:cover;
+  background-color: blue;
   background-attachment: fixed;
   background-image: url('../images/earth.jpg');
 }
@@ -11,7 +12,7 @@ body.index {
   max-width: 1000px;
   text-align: center;
   min-height: 300px;
-  background-color: rgba(1, 1, 13,0.6);
+  background-color: rgba(0, 82, 158,0.6);
   color: rgb(196, 199, 206);
   justify-content:center;
   margin-left: auto;
@@ -24,11 +25,12 @@ body.index {
 .dp {
   width:200px;
   border-radius: 50%;
-  text-align: center;
-  float:right;
+  margin: 10px 10px;
+
 }
 .lead {
-  text-align: center;
+  text-align: left;
+  padding: 10px;
 }
 }
 
@@ -43,6 +45,7 @@ body.index {
 .resume-parts {
   text-align: left;
   color:$silver;
+  padding-left: 10px;
 }
 
 .section {
@@ -53,6 +56,7 @@ body.index {
 .resume {
   color:$silver;
   text-decoration: none;
+  padding-left: 0px;
 }
 }
 
@@ -66,7 +70,8 @@ body.index {
 }
 
 .resume-content{
-  text-decoration: underline;
+  text-decoration:none;
+  padding-bottom: 10px;
 }
 
 li {
@@ -76,39 +81,63 @@ li {
 #pm{
   width:200px;
   border-radius: 50%;
-  text-align: center;
+  text-align: left;
 
+}
+
+.wrapper-footer{
+  text-align: center;
+  background-color:rgba(0, 82, 158,0.6);
+  margin-top: 100px;
+  padding-bottom: 0px;
+  font-size: 15.5px;
+  padding-bottom: 50px;
+  color:$silver;
+
+  ul {
+    text-decoration: none;
+
+  }
+
+  .section {
+  text-align: center;
+  color:$silver;
+  padding-bottom: 10px;
+}
 }
 
 .slidingVertical{
   display: inline;
   text-indent: 8px;
   font-size: 35px;
-  text-align: center;
+  text-align: right;
 }
 .slidingVertical span{
-  animation: topToBottom 12.5s linear infinite 0s;
-  -ms-animation: topToBottom 12.5s linear infinite 0s;
-  -webkit-animation: topToBottom 12.5s linear infinite 0s;
-  color: #00abe9;
+  animation: topToBottom 10s linear infinite 0s;
+  -ms-animation: topToBottom 10s linear infinite 0s;
+  -webkit-animation: topToBottom 10s linear infinite 0s;
+  color: $blue;
   opacity: 0;
   overflow: hidden;
   position: absolute;
+  left:0;
+  text-align: center;
+  width:100%;
 }
 .slidingVertical span:nth-child(2){
-  animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
+  animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
 }
 .slidingVertical span:nth-child(3){
-  animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
+  animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
 }
 .slidingVertical span:nth-child(4){
-  animation-delay: 7.5s;
-  -ms-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
+  animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
 }
 
 @-moz-keyframes topToBottom{
@@ -138,3 +167,4 @@ li {
   80% { opacity: 0; }
   100% { opacity: 0; }
 }
+
